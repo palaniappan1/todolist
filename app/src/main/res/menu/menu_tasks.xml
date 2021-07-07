@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        app:showAsAction="always|collapseActionView"
+        android:title="Search"
+        android:id="@+id/search"
+        android:icon="@drawable/ic_baseline_search_24"
+        app:actionViewClass="androidx.appcompat.widget.SearchView" />
+
+    <item
+        app:showAsAction="always"
+        android:title="Sort"
+        android:id="@+id/sort"
+        android:icon="@drawable/ic_baseline_sort_24">
+        <menu>
+            <item
+                android:id="@+id/action_sort_by_name"
+                android:title="Sort by name"/>
+            <item
+                android:id="@+id/action_sort_by_date"
+                android:title="Sort by date"/>
+        </menu>
+    </item>
+
+    <item
+        app:showAsAction="never"
+        android:title="Hide Completed Tasks"
+        android:checkable="true"
+        android:id="@+id/hide_completed_tasks" />
+
+    <item
+        app:showAsAction="never"
+        android:title="Delete Completed Tasks"
+        android:id="@+id/delete_completed_tasks" />
+
+
+
+</menu>

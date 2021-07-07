@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <CheckBox
+        android:id="@+id/checkbox_completed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:minWidth="0dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/task_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/checkbox_completed"
+        android:layout_alignBottom="@id/checkbox_completed"
+        android:layout_toStartOf="@id/priority"
+        android:layout_toEndOf="@id/checkbox_completed"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        tools:text="Todo Item romba perusa irku pa enna panrathune therila" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/priority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_priority" />
+
+</RelativeLayout>
